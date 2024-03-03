@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNESCO
+    </title>
+    <link rel="shortcut icon" href="download (7).jpeg" type="image/x-icon">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            background-color:white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #D9AFD9;
+background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+
+        }
+        .box{
+            height: 98%;
+            width: 72%;
+            background-color: rgb(252, 252, 251);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: center; */
+            background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+border-radius: 15px;
+padding: 30px;
+box-shadow: 5px 5px 15px black;
+            /* justify-content: center; */
+        }
+        .header{
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            gap: 18px;
+            width:70% ;
+            margin-bottom: 50px;
+        }
+        .header_name{
+margin-top: 15px;
+text-align: center;
+        }
+        .desc
+        {
+           max-width: 500px;
+text-align: center;
+color: rgb(197, 190, 190);
+        }
+       .main_container{
+        width: 100%;
+        display: grid;
+        gap: 20px;
+
+    }
+    @media (min-width:650px){
+        .main_container{
+         
+grid-template-columns: repeat(2,1fr);
+        }}
+        @media (min-width:1080px)
+        {
+        .main_container{
+            gap: 20px;
+grid-template-columns: repeat(3,1fr);
+        }
+        }
+        @media (min-width:1360px)
+        {
+        .main_container{
+            gap: 20px;
+grid-template-columns: repeat(4,1fr);
+        }
+        }
+    
+.card_container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(218, 216, 216);
+    border-radius: 5px;
+/* width: 80%; */
+overflow: hidden;
+
+}
+.card_title_desc{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* gap: 14px; */
+    margin: 15px;
+text-align: start;
+}
+.card_title{
+    text-align:center;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(13, 12, 12);
+    font-size: 1.1rem;
+    margin-bottom: 13px;
+}
+.card_footer_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.author_container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+.card_container:hover .imagecontainer{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+.card_title:hover{
+    color: rgb(62, 62, 218);
+}
+.card_desc{
+    color: rgb(79, 75, 75);
+text-align: center;
+}
+.card_tag_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dotted black;
+    border-radius: 3px;
+    color: gray;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+.author_avatar{
+    width:2rem;
+    height:2rem;
+    border: 1px solid rgb(132, 124, 124);
+    border-radius: 50%;
+    margin-bottom: 3px;
+}
+.author_info_container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    font-size: small;
+
+}
+
+.card1img{
+    width: 100%;
+    height: 100%;
+}
+.navContainer{
+    width: 100%;
+
+    background-color: #000000;
+background-image: linear-gradient(160deg, #000000 0%, #8085d0 100%);
+
+
+
+
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#navList{
+    width: 100vw;
+    padding: 15px;
+
+    list-style: none;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#navLogo{
+    font-size: 2.8rem;
+    color: azure;
+}
+#navItems{
+    display: flex;
+    gap: 40px;
+    
+}
+#navItems a{
+    text-decoration: none;
+    color: azure;
+}
+.topic{
+    margin: 50px;
+}
+.topic h1{
+    line-height: 30px;
+    font-size: 50px;
+    
+}
+.description{
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 50px;
+    padding: 50px;
+}
+.detail{
+    text-align: center;
+margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.detail a{
+    text-decoration: none;
+    color: black;
+    font-size:medium;
+  
+}
+.imagecontainer{
+    height: 40%;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="navContainer">
+                <nav>
+                    <ul id="navList">
+                        <li>
+                            <p id="navLogo">UNESCO</p>
+                        </li>
+                        <li>
+                            <div id="navItems">
+                                <a href="#">Home</a>
+                                <a href="#">Contact</a>
+                                <a href="#">About</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="topic">
+            <h1>World's Heritage Sites In India</h1>
+        </div>
+        <div class="description">
+            India boasts several UNESCO World Heritage sites, including the stunning Taj Mahal, a marvel of Mughal architecture; the historic Qutub Minar in Delhi; the ancient ruins of Hampi; the stunning hill forts of Rajasthan; the intricate temples of Khajuraho; the majestic Sun Temple in Konark; and the expansive wildlife sanctuaries of Kaziranga and Sundarbans. These sites showcase India's rich cultural, historical, and natural heritage, drawing visitors from around the globe.
+         </div>
+        <div class="box">
+ 
+            <div class="main_container">
+                <!-- card1 start -->
+                <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Taj-Mahal.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/252/" class="card_title">
+                            Taj Mahal
+                        </a>
+                        <p class="card_desc">
+                            Located in Agra, it's a white marble mausoleum built by Emperor Shah Jahan in memory of his wife. It's a symbol of love and an architectural marvel.
+
+                        </p>
+                    </div>
+                   
+                  
+                </div>
+                <!-- card1 end -->
+                <!-- card2 start -->
+                <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Khajuraho1.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/240/" class="card_title">
+                            Khajuraho Group of Monuments
+                        </a>
+                        <p class="card_desc">
+                            In Madhya Pradesh, these temples are known for their stunning erotic sculptures and exquisite architectural details.
+
+                        </p>
+                    </div>
+                   
+                    
+                </div>
+                <!-- card2 end -->
+                <!-- card3start -->
+                <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Achyutaraya-Temple-Hampi.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/241/" class="card_title">
+                         Hampi                        </a>
+                        <p class="card_desc">
+                           The ruins of Vijayanagara, the former capital of the Vijayanagar Empire, are a UNESCO World Heritage site and a fascinating historical site.
+
+                        </p>
+                    </div>
+                    
+                </div>
+                <!-- card3 end -->
+                <!-- card4 start -->
+                 <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="download (5).jpeg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/242/" class="card_title">
+                          Ajanta Caves
+                        </a>
+                        <p class="card_desc">
+                            In Maharashtra, these Buddhist caves are famous for their beautiful paintings and sculptures depicting the life of Buddha.
+                           
+                            
+                        </p>
+                    </div>
+                   
+                </div>
+                 <!-- card4 end -->
+                 <!-- card5 start -->
+                 <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Ellora.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/243/" class="card_title">
+                         Ellora Caves
+                        </a>
+                        <p class="card_desc">
+                            Also in Maharashtra, these caves showcase rock-cut temples and monasteries from Hindu, Buddhist, and Jain traditions.
+
+                        </p>
+                    </div>
+                   
+                </div>
+                 <!-- card5 end -->
+                 <!-- card6 start -->
+                 <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="3536.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/1056/" class="card_title">
+                          Bodh Gaya
+                        </a>
+                        <p class="card_desc">
+                             The Mahabodhi Temple complex, a UNESCO World Heritage site, houses the famous Mahabodhi Temple, the Vajrasana, and the holy Bodhi Tree
+                        </p>
+                    </div>
+                    
+                </div>
+                 <!-- card6 end
+                 -->
+                 <!-- card7 start -->
+                 
+                 <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Konark.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/246/" class="card_title">
+                        Sun Temple
+                        </a>
+                        <p class="card_desc">
+                            Konark: A 13th-century temple in Odisha, it's designed as a colossal chariot with 12 pairs of wheels, drawn by seven horses.
+                        </p>
+                    </div>
+                    
+                </div>
+                <!-- card7 end -->
+                <!-- card8 start
+                 -->
+                 <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Red-Fort.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/231/#:~:text=The%20Red%20Fort%20Complex%20was,forms%20the%20Red%20Fort%20Complex." class="card_title">
+                        Red Fort
+
+                        </a>
+                        <p class="card_desc">
+                            A historic fort in Delhi, it was the main residence of the emperors of the Mughal dynasty. Its architecture is a blend of Persian, Timurid, and Indian styles.
+
+                        </p>
+                    </div>
+                  
+                </div>
+                 <!-- card8 end -->
+                 <!-- card9 start -->
+                 <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="download (6).jpeg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/922/" class="card_title">
+                        Rani ki Vav
+
+                        </a>
+                        <p class="card_desc">
+                            Located in Gujarat, it's an intricately constructed stepwell that served as a place for meditation and community gatherings.
+
+                        </p>
+                    </div>
+                 
+                </div>
+                 <!-- c9 end -->
+                  <!-- card10 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Brihadeshwar-Temple-by-the-Cholas.jpg
+                        " alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/250/" class="card_title">
+                     Chola temples
+
+                        </a>
+                        <p class="card_desc">
+                            These temples in Tamil Nadu are examples of the Chola dynasty's architectural grandeur and artistic achievements.
+
+
+                        </p>
+                    </div>
+                   
+                </div>
+                 <!-- c10 end -->
+                  <!-- card11 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Kaziranga.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/soc/3003/#:~:text=The%20Kaziranga%20National%20Park%20was,to%20about%201%2C200%20at%20present." class="card_title">
+                            Kaziranga Wild Life Sanctuary
+
+                        </a>
+                        <p class="card_desc">
+                            Its conservation efforts for the Indian one-horned rhinoceros. It is also home to tigers, elephants, and numerous bird species. The park's diverse ecosystems, including wetlands and grasslands
+
+                        </p>
+                    </div>
+                   
+                </div>
+                 <!-- c11  end -->
+                  <!-- card12 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Sanchi-Stupa1.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/524/" class="card_title">
+                        Sanchi
+
+                        </a>
+                        <p class="card_desc">
+                          
+                            One of the oldest stone structures in India. Built by Emperor Ashoka in the 3rd century BCE, it is a Buddhist complex with several stupas, monasteries, temples, and pillars.
+                        </p>
+                    </div>
+                    
+                </div>
+                 <!-- c12 end -->
+                  <!-- card13 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Mahabalipuram.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/249/" class="card_title">
+                      Monuments in Mahabalipuram
+
+                        </a>
+                        <p class="card_desc">
+                            Dating back to the 7th and 8th centuries, these monuments, including the famous Shore Temple and the Five Rathas, showcase exquisite Dravidian architecture and are significant cultural landmarks.
+
+                        </p>
+                    </div>
+                    
+                </div>
+                 <!-- c13 end -->
+                  <!-- card14 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Sunderbans.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/798/" class="card_title">
+                        Sundarbans
+                        </a>
+                        <p class="card_desc">
+                            A vast mangrove forest spread across India and Bangladesh, it's home to the Bengal tiger and other endangered species.
+
+
+                        </p>
+                    </div>
+                  
+                </div>
+                 <!-- c14end -->
+                  <!-- card15 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Humayuns-Tomb.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/232/" class="card_title">
+                    Humayuns Tomb
+
+                        </a>
+                        <p class="card_desc">
+                            In Delhi, it's the tomb of the Mughal Emperor Humayun, with Persian-inspired architecture and beautiful gardens.
+
+
+                        </p>
+                    </div>
+                   
+                </div>
+                 <!-- c15 end -->
+                  <!-- card16 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Jantar-Mantar.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/1338/" class="card_title">
+                 Jantar Mantar
+
+                        </a>
+                        <p class="card_desc">
+                            A collection of architectural astronomical instruments, it's a UNESCO World Heritage site and a marvel of scientific innovation.
+
+
+                        </p>
+                    </div>
+                    
+                </div>
+                 <!-- c16 end -->
+                  <!-- card17 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Agra-Fort.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/251/" class="card_title">
+                     Agra Fort
+
+                        </a>
+                        <p class="card_desc">
+                            A UNESCO World Heritage site in Agra, it served as the main residence of the Mughal emperors until 1638.
+
+                        </p>
+                    </div>
+                  
+                </div>
+                 <!-- c17 end -->
+                  <!-- card18 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Fatehpur-Sikri.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/255/" class="card_title">
+                       Fatehpur Sikri
+
+                        </a>
+                        <p class="card_desc">
+                            A city in Agra, built by Emperor Akbar in the 16th century, it served as the capital of the Mughal Empire for 10 years.
+
+
+                        </p>
+                    </div>
+                
+                </div>
+                 <!-- c18 end -->
+                  <!-- card19 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Pattadakal.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/239/" class="card_title">
+                      Pattadakal
+
+                        </a>
+                        <p class="card_desc">
+                            Known for its remarkable Chalukya architecture. Dating back to the 7th and 8th centuries, these temples blend various Indian architectural styles, including Nagara and Dravida styles.
+
+                        </p>
+                    </div>
+                 
+                </div>
+                 <!-- c19 end -->
+                  <!-- card20 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Elephanta.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/244/" class="card_title">
+              Elephanta Caves
+
+                        </a>
+                        <p class="card_desc">
+                            Near Mumbai, these caves have rock-cut stone sculptures dedicated to Shiva, reflecting Hindu cave culture.
+
+
+                        </p>
+                    </div>
+                    
+                </div>
+                 <!-- c20 end -->
+                  <!-- card21 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Nalanda_University_India_ruins.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/1502/" class="card_title">
+                   Nalanda Mahavihara
+
+                        </a>
+                        <p class="card_desc">
+                            In Bihar, it was a renowned center for learning from the 5th to 12th century and a significant Buddhist monastery.
+
+                        </p>
+                    </div>
+                   
+                </div>
+                 <!-- c21 end -->
+                  <!-- card22 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="CST-Mumbai.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/945/" class="card_title">
+                            Chhatrapati Shivaji Maharaj Terminus 
+
+                        </a>
+                        <p class="card_desc">
+                            A historic railway station in Mumbai, it's a fine example of Victorian Gothic Revival architecture in India.
+
+                        </p>
+                    </div>
+                   
+                </div>
+                 <!-- c22 end -->
+                  <!-- card23 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="KalkaE28093Shimla_Railway_20190218173111jpg.jpeg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/944/" class="card_title">
+                       Mountain Railways
+
+                        </a>
+                        <p class="card_desc">
+                            This UNESCO World Heritage site includes the Darjeeling Himalayan Railway, Nilgiri Mountain Railway, and Kalka-Shimla Railway.
+
+
+                        </p>
+                    </div>
+                 
+                </div>
+                 <!-- c23 end -->
+                  <!-- card24 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Qutb-Minar.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/233/" class="card_title">
+                    Qutub Minar
+
+                        </a>
+                        <p class="card_desc">
+                            In Delhi, it's the tallest brick minaret in the world. Built in 1193, it's a beautiful example of early Indo-Islamic architecture.
+
+
+                        </p>
+                    </div>
+                  
+                </div>
+                 <!-- c24 end -->
+                  <!-- card25 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Champaner.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/1101/" class="card_title">
+                    
+                             Champaner-Pavagadh Archaeological Park
+                        </a>
+                        <p class="card_desc">
+                            In Gujarat, it has a concentration of largely unexcavated archaeological, historic, and living cultural heritage properties.
+
+
+                        </p>
+                    </div>
+                  
+                </div>
+                 <!-- c25 end -->
+                  <!-- card26 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Great-Himalayan-National-Park.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/1406/" class="card_title">
+                            Great Himalayan National Park
+
+                        </a>
+                        <p class="card_desc">
+                            World Heritage site known for its stunning biodiversity. It is home to numerous species of flora and fauna, including the elusive snow leopard. The park's diverse ecosystems, ranging from lush forests to alpine meadows.
+                        </p>
+                    </div>
+               
+                </div>
+                 <!-- c26 end -->
+                  <!-- card27 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Manas-Wildlife-Sanctuary.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/338/" class="card_title">
+                      Manas Wildlife Sanctuary
+
+                        </a>
+                        <p class="card_desc">
+                            It is known for its rich biodiversity, including the endangered Bengal tiger, Indian rhinoceros, and pygmy hog. The sanctuary's diverse ecosystems, including grasslands, forests, and wetland
+
+                        </p>
+                    </div>
+                  
+                </div>
+                 <!-- c27 end -->
+                  <!-- card28 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Kumbhalgarh-Fort-Rajasthan.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/247/" class="card_title">
+                            Hill Forts of Rajasthan
+
+                        </a>
+                        <p class="card_desc">
+                            A group of six majestic forts in Rajasthan, they are excellent examples of Rajput military hill architecture.
+
+                        </p>
+                    </div>
+                
+                </div>
+                 <!-- c28 end -->
+                  <!-- card29 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Church-of-St.-Francis-of-Assisi-Goa.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/234/" class="card_title">
+                            Churches and Convents of Goa
+
+                        </a>
+                        <p class="card_desc">
+                            Represent the architectural splendor of Christian art in India. Built during the Portuguese colonial era, the churches, such as the Basilica of Bom Jesus and the Church of St. Francis of Assisi.
+
+                        </p>
+                    </div>
+                  
+                </div>
+                 <!-- c29 end -->
+                  <!-- card30 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Rock-Shelters-of-Bhimbetka-Madhya-Pradesh.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/925/" class="card_title">
+                            Rock Shelters of Bhimbetka
+
+                        </a>
+                        <p class="card_desc">
+                            Located in Madhya Pradesh, these rock shelters have paintings that date back to the Mesolithic period.
+
+
+                        </p>
+                    </div>
+                 
+                </div>
+                 <!-- c30 end -->
+                  <!-- card31 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Keoladeo-Bharatpur1.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/340/" class="card_title">
+                            Keoladeo National Park
+
+                        </a>
+                        <p class="card_desc">
+                            Formerly a duck-hunting reserve of the Maharajas, it is now a haven for migratory birds, including the rare Siberian crane. The park's wetlands, woodlands, and grasslands make it a unique and important ecosystem for avian conservation.
+
+                        </p>
+                    </div>
+              
+                </div>
+                 <!-- c31 end -->
+                  <!-- card32 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Valley-of-Flowers-National-Park.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/335/" class="card_title">
+                       Nanda Devi
+
+                        </a>
+                        <p class="card_desc">
+                            In Uttarakhand, these parks are renowned for their diverse flora and fauna, including rare and endangered species.
+
+
+                        </p>
+                    </div>
+                  
+                </div>
+                 <!-- c32 end -->
+                  <!-- card33 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Western-Ghats.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/1342/" class="card_title">
+                       Western Ghats
+
+                        </a>
+                        <p class="card_desc">
+                            A UNESCO World Heritage site, these mountains are home to a rich variety of flora and fauna, and many endemic species.
+
+                        </p>
+                    </div>
+                 
+                </div>
+                 <!-- c33 end -->
+                  <!-- card34 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="9846695995_6b0629c2dc_z.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/1513/" class="card_title">
+                            Kanchenjunga National Park
+
+                        </a>
+                        <p class="card_desc">
+                            
+                            The park's diverse ecosystems, including glaciers, alpine meadows, and subtropical forests, support a wide variety of flora and fauna, including the red panda and the snow leopard, making it a biodiversity hotspot.
+                        </p>
+                    </div>
+                  
+                </div>
+                 <!-- c34 end -->
+                  <!-- card35 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="capitol-complex.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/1321/" class="card_title">
+                       Capitol Complex
+
+                        </a>
+                        <p class="card_desc">
+                            Designed by Swiss-French architect Le Corbusier. It houses the Legislative Assembly, Secretariat, and High Court. The complex's modernist architecture and urban planning principles, with geometric shapes and open spaces.
+
+                        </p>
+                    </div>
+                  
+                </div>
+                 <!-- c35 end -->
+                  <!-- card36 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Ahmedabad.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/1551/#:~:text=The%20walled%20city%20of%20Ahmadabad,well%20as%20important%20Hindu%20and" class="card_title">
+                            The Historic City of Ahmedabad
+
+                        </a>
+                        <p class="card_desc">
+                          
+                            It boasts of intricately carved wooden havelis, historic mosques, and temples, including the famous Jama Masjid and Sidi Saiyyed Mosque. The city's vibrant culture and bustling streets reflect its centuries-old history as a major center of trade and culture.
+                        </p>
+                    </div>
+                 
+                </div>
+                 <!-- c36 end -->
+                  <!-- card37 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="dest_wiki_5642.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/1480/" class="card_title">
+                       The Victorian and Art Deco Ensemble of Mumbai
+
+                        </a>
+                        <p class="card_desc">
+                            The ensemble includes the Bombay High Court, Rajabai Clock Tower, and the University of Mumbai, representing Victorian architecture, and the Eros Cinema and buildings along Marine Drive, showcasing Art Deco style.
+
+                        </p>
+                    </div>
+                  
+                </div>
+                 <!-- c37 end -->
+                  <!-- card38 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="JAIPUR.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/1605/" class="card_title">
+                       The Pink City
+
+                        </a>
+                        <p class="card_desc">
+                            It gets its name from the pink sandstone used in many of its buildings. The city is home to the iconic Hawa Mahal, City Palace, and Jantar Mantar, reflecting its rich history as a royal capital and cultural center in Rajasthan, India.
+                        </p>
+                    </div>
+                 
+                </div>
+                 <!-- c38 end -->
+                  <!-- card39 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Indian_kumbh_Festival.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://ich.unesco.org/en/RL/kumbh-mela-01258" class="card_title">
+                        Kumbh Mela
+
+                        </a>
+                        <p class="card_desc">
+                            Kumbh Mela is a major Hindu pilgrimage and festival celebrated in four locations in India—Prayagraj, Haridwar, Nashik, and Ujjain—rotating every three years. It is the largest religious gathering in the world
+
+                        </p>
+                    </div>
+                  
+                </div>
+                 <!-- c39 end -->
+                  <!-- card40  start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Dholavira-Banner.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/1645/" class="card_title">
+                            Dholavira: A Harappan City
+
+                        </a>
+                        <p class="card_desc">
+                           
+                            located in present-day Gujarat, India. It is one of the five largest Harappan sites and is known for its well-planned urban infrastructure, including a fortified citadel and a sophisticated water management system
+                        </p>
+                    </div>
+                 
+                </div>
+                 <!-- c40 end -->
+                  <!-- card41 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="Santiniketan_Griha.jpg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/1375/" class="card_title">
+                      Santiniketan
+
+                        </a>
+                        <p class="card_desc">
+                            its connection to Nobel laureate Rabindranath Tagore. It houses Visva-Bharati University, founded by Tagore, blending Indian and Western educational philosophies. Santiniketan is known for its cultural heritage, including the Poush Mela festival and its emphasis on arts, crafts, and traditional music.
+
+                        </p>
+                    </div>
+                  
+                </div>
+                 <!-- c41 end -->
+                  <!-- card42 start -->
+                  <div class="card_container">
+                    <a href="#" class="imagecontainer">
+                        <img src="1204_20200618101001.jpeg" alt="card 1 image" class="card1img" loading="lazy">
+                    </a>
+                    <div class="card_title_desc">
+                        <a href="https://whc.unesco.org/en/list/1670/" class="card_title">
+                            Hoysala Temples
+                        </a>
+                        <p class="card_desc">
+                            The Chennakesava Temple in Belur and the Hoysaleswara Temple in Halebidu are prime examples, showcasing Hoysala art and architecture. These temples are renowned for their exquisite craftsmanship
+
+                        </p>
+                    </div>
+                  
+                </div>
+                 <!-- c42 end -->
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
